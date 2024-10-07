@@ -71,13 +71,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(ProjectDIR)</OutDir>
-    <IntDir>$(ProjectDIR)$(Configuration)Bin-Int</IntDir>
+    <OutDir>$(SolutionDir)$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(ProjectName)\Bin-Int\</IntDir>
     <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(ProjectDIR)</OutDir>
-    <IntDir>$(ProjectDIR)$(Configuration)Bin-Int</IntDir>
+    <OutDir>$(SolutionDir)$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(ProjectName)\Bin-Int\</IntDir>
     <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -146,10 +146,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Application.cpp" />
+    <ClCompile Include="src\Test.cpp" />
     <ClCompile Include="src\WeaponEdit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
+    <ClInclude Include="src\Test.h" />
     <ClInclude Include="src\WeaponEdit.h" />
   </ItemGroup>
   <ItemGroup>

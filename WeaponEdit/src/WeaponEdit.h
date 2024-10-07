@@ -1,7 +1,7 @@
 #pragma once
 
 #pragma once
-#include "Test/Test.h"
+#include "Test.h"
 #include "imgui/imgui.h"
 #include "OpenGL/Texture.h"
 

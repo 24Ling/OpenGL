@@ -44,13 +44,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)\$(Configuration)\Bin-int</IntDir>
+    <OutDir>$(SolutionDir)\$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)\$(Platform)\$(ProjectName)\Bin-Int\</IntDir>
     <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)\$(Configuration)\</OutDir>
-    <IntDir>$(ShortProjectName)\$(Configuration)\Bin-int</IntDir>
+    <OutDir>$(SolutionDir)\$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)\$(Platform)\$(ProjectName)\Bin-Int\</IntDir>
     <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
