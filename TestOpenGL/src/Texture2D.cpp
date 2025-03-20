@@ -17,7 +17,7 @@ Texture2D::Texture2D()
 	m_Translation.insert({ "Asprose",	{ 200,  200, 0 } });
 	m_Translation.insert({ "Blue",		{ 600,  200, 0 } });
 	m_Translation.insert({ "Cpp",		{ 1000, 200, 0 } });
-	//m_Translation.insert({ "KDA",		{ 200,  600, 0 } });
+	m_Translation.insert({ "KDA",		{ 200,  600, 0 } });
 	m_Translation.insert({ "Ling",		{ 600,  600, 0 } });
 	m_Translation.insert({ "Wang",		{ 1000, 600, 0 } });
 	m_Translation.insert({ "Syndra",	{ 1400, 600, 0 } });
@@ -47,7 +47,7 @@ Texture2D::Texture2D()
 	m_Texture.push_back(std::make_shared<Texture>("resource/textures/Asprose.png"));
 	m_Texture.push_back(std::make_shared<Texture>("resource/textures/Blue.png"));
 	m_Texture.push_back(std::make_shared<Texture>("resource/textures/Cpp.png"));
-	//m_Texture.push_back(std::make_shared<Texture>("resource/textures/KDA.png"));
+	m_Texture.push_back(std::make_shared<Texture>("resource/textures/KDA.png"));
 	m_Texture.push_back(std::make_shared<Texture>("resource/textures/Ling.png"));
 	m_Texture.push_back(std::make_shared<Texture>("resource/textures/Wang.png"));
 	m_Texture.push_back(std::make_shared<Texture>("resource/textures/Syndra.png"));

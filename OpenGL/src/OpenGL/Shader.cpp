@@ -57,7 +57,7 @@ ShaderProgramSources Shader::ParseShader(const std::string& filepath)
 }
 unsigned int Shader::CompileShader(unsigned int type, const std::string& source)
 {
-	// Build and compile the vertex shader
+	// Build and compile the shader
 	uint32_t id = glCreateShader(type);
 	const char* src = source.c_str();
 	glShaderSource(id, 1, &src, nullptr);
@@ -76,6 +76,7 @@ unsigned int Shader::CompileShader(unsigned int type, const std::string& source)
 		std::cout << "Failed to compile " << (type == GL_VERTEX_SHADER ? "vertex" : "fragment")
 			<< " shader!" << std::endl;
 		std::cout << message << std::endl;
+		delete message;
 		glDeleteShader(id);
 		return 0;
 

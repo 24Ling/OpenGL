@@ -94,19 +94,6 @@ ShipGame::ShipGame()
 
 void ShipGame::OnUpdate()
 {
-	if (event.EventCallBack(KeyType::HAZEL_KEY_SPACE))
-	{
-		if (rotation < -90.0f)
-			rotation = -90.0f;
-		rotation += 0.1f;
-		m_Translation["Ship"][1] += 0.7;
-	}
-	else
-	{
-		rotation -= 0.1f;
-		m_Translation["Ship"][1] -= 0.7;
-	}
-
 
 	if (event.EventCallBack(KeyType::HAZEL_KEY_Q))
 	{
